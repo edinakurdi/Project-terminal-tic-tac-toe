@@ -21,7 +21,7 @@ function validateMove(move, board) {
   if (row > 0 && row < 4 && col > 0 && col < 4) {
     return board[row - 1][col - 1] === "_";
   }
-  console.log("Invalid move");
+  console.log("Try again...\n");
   return false;
 }
 
