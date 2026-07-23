@@ -17,7 +17,12 @@
 */
 function validateMove(move, board) {
   // Implement this at the end if you have time, otherwise you can help your teammates!
-  return true;
+  const [row, col] = move.split(",");
+  if (row > 0 && row < 4 && col > 0 && col < 4) {
+    return board[row - 1][col - 1] === "_";
+  }
+  console.log("Invalid move");
+  return false;
 }
 
 /*
